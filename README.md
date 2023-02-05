@@ -49,8 +49,10 @@ $ kubectl create -f app-deploy.yml
 **Note:** After the app is deployed, it might take the load balancer a few seconds to load.
 
 *While waiting for the load balancer to deploy, we can check the status of the cluster with these commands:*
-**Get each pods status:** `kubectl get pods`
-**Get app status:** `kubectl get deployment`
+|Command   |Description |
+---  |  ---  |        
+|`kubectl get pods`	     |     Get each pods status |
+|`kubectl get deployment`	  |Get app status |
 
 ## Check if the load balancer is live
 ```
