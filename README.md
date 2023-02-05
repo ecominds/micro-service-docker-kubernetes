@@ -75,6 +75,6 @@ $ kubectl delete -f app-deploy.yml
 ```
 ```
 #Output:
-deployment.apps/python-hello-app deleted
-service "python-hello-app-lb" deleted
+service "dept-api-service" deleted
+deployment.apps "dept-api" deleted
 ```
