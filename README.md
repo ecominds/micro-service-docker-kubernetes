@@ -58,11 +58,12 @@ $ kubectl create -f app-deploy.yml
 ```
 $ kubectl get services
 ```
+```
 #Output:
 NAME               TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
 dept-api-service   LoadBalancer   10.100.246.121   localhost     8081:31931/TCP   10m
 kubernetes         ClusterIP      10.96.0.1        <none>        443/TCP          75m
-
+```
 ## Use the load balancer IP address to access the app in a browser:
 ```
 http://<load-balancer-IP-address>:8081/api/departments/
@@ -72,6 +73,8 @@ http://<load-balancer-IP-address>:8081/api/departments/
 ```
 $ kubectl delete -f app-deploy.yml
 ```
+```
 #Output:
 deployment.apps/python-hello-app deleted
 service "python-hello-app-lb" deleted
+```
