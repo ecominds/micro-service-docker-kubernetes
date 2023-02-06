@@ -45,11 +45,14 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8082
+        env:
+        - name: ecominds.endpoint.dept-service.base-path
+          value: http://dept-api-lb:8081/api/departments/
 ---     
 apiVersion: v1
 kind: Service
 metadata:
-  name: dept-api  #this should be matched with the config param passed into the user-api image
+  name: dept-api-lb
 spec:
   selector:
     app: dept-api
